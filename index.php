@@ -137,7 +137,7 @@ if (!isset($_SESSION['user_id'])) {
 // ---------------- APP CONTEXT ----------------
 $currentUserRole = $_SESSION['role'];
 $currentUserId = $_SESSION['user_id'];
-$action = $_GET['action'] ?? $_POST['action'] ?? 'dashboard';
+$action = $_POST['action'] ?? $_GET['action'] ?? 'dashboard';
 
 // ---------------- DEFINITIONS ----------------
 $categories = [
