@@ -153,47 +153,53 @@ foreach ([2,3,7,8,12] as $n) { $cat_map[$n] = 'cat2'; }
 foreach ([13,14,15,16,17,19,20,21,22,23] as $n) { $cat_map[$n] = 'cat3'; }
 foreach ([10,24,25,26] as $n) { $cat_map[$n] = 'cat4'; }
 
+// Questions in EN and HI
 $question_texts = [
-  1  => "I feel energetic and able to complete daily tasks without excessive fatigue.",
-  2  => "I am satisfied with the quality of my sleep during the past month.",
-  3  => "I can concentrate on tasks without being easily distracted.",
-  4  => "I find it easy to maintain a balanced diet most days.",
-  5  => "I feel comfortable with my current level of physical activity.",
-  6  => "I rarely experience sudden or unexplained mood swings.",
-  7  => "I can manage stress effectively in most situations.",
-  8  => "I have a reliable support network when I need help.",
-  9  => "I am generally satisfied with my weight and body composition.",
- 10 => "I can complete physical tasks that require strength or endurance.",
- 11 => "I rarely experience digestive discomfort such as bloating or pain.",
- 12 => "I drink enough water and stay properly hydrated during the day.",
- 13 => "I follow routines that help me stay organized and productive.",
- 14 => "I can control impulses that may negatively affect my health.",
- 15 => "I feel emotionally balanced and resilient to setbacks.",
- 16 => "I regularly engage in activities that promote mental well-being.",
- 17 => "I find it easy to fall asleep and wake up feeling refreshed.",
- 18 => "I maintain good posture and ergonomics during my typical day.",
- 19 => "I limit my intake of highly processed or fast foods.",
- 20 => "I feel confident in my ability to maintain personal hygiene routines.",
- 21 => "I avoid using substances in ways that may harm my health.",
- 22 => "I follow medical advice and attend recommended health checkups.",
- 23 => "I feel that my breathing and respiratory health are good.",
- 24 => "I am able to talk clearly and express myself when needed.",
- 25 => "I find it easy to adapt my routine when circumstances change.",
- 26 => "Overall, I consider my current health to be satisfactory."
+  1  => ['en' => "I feel energetic and able to complete daily tasks without excessive fatigue.", 'hi' => "मैं ऊर्जावान महसूस करता/करती हूँ और अत्यधिक थकान के बिना दैनिक कार्य पूरे कर सकता/सकती हूँ।"],
+  2  => ['en' => "I am satisfied with the quality of my sleep during the past month.", 'hi' => "मैं पिछले महीने के दौरान अपनी नींद की गुणवत्ता से संतुष्ट हूँ।"],
+  3  => ['en' => "I can concentrate on tasks without being easily distracted.", 'hi' => "मैं आसानी से विचलित हुए बिना कार्यों पर ध्यान केंद्रित कर सकता/सकती हूँ।"],
+  4  => ['en' => "I find it easy to maintain a balanced diet most days.", 'hi' => "मुझे अधिकांश दिनों में संतुलित आहार बनाए रखना आसान लगता है।"],
+  5  => ['en' => "I feel comfortable with my current level of physical activity.", 'hi' => "मैं अपनी वर्तमान शारीरिक गतिविधि के स्तर के साथ सहज महसूस करता/करती हूँ।"],
+  6  => ['en' => "I rarely experience sudden or unexplained mood swings.", 'hi' => "मुझे शायद ही कभी अचानक या अस्पष्टीकृत मिजाज में बदलाव (mood swings) का अनुभव होता है।"],
+  7  => ['en' => "I can manage stress effectively in most situations.", 'hi' => "मैं अधिकांश स्थितियों में तनाव को प्रभावी ढंग से प्रबंधित कर सकता/सकती हूँ।"],
+  8  => ['en' => "I have a reliable support network when I need help.", 'hi' => "जब मुझे मदद की आवश्यकता होती है तो मेरे पास एक विश्वसनीय सहायता नेटवर्क होता है।"],
+  9  => ['en' => "I am generally satisfied with my weight and body composition.", 'hi' => "मैं आम तौर पर अपने वजन और शारीरिक बनावट से संतुष्ट हूँ।"],
+  10 => ['en' => "I can complete physical tasks that require strength or endurance.", 'hi' => "मैं शारीरिक कार्यों को पूरा कर सकता/सकती हूँ जिनके लिए ताकत या सहनशक्ति की आवश्यकता होती है।"],
+  11 => ['en' => "I rarely experience digestive discomfort such as bloating or pain.", 'hi' => "मुझे शायद ही कभी सूजन या दर्द जैसी पाचन संबंधी परेशानी का अनुभव होता है।"],
+  12 => ['en' => "I drink enough water and stay properly hydrated during the day.", 'hi' => "मैं दिन के दौरान पर्याप्त पानी पीता/पीती हूँ और हाइड्रेटेड रहता/रहती हूँ।"],
+  13 => ['en' => "I follow routines that help me stay organized and productive.", 'hi' => "मैं उन दिनचर्या का पालन करता/करती हूँ जो मुझे व्यवस्थित और उत्पादक बने रहने में मदद करती हैं।"],
+  14 => ['en' => "I can control impulses that may negatively affect my health.", 'hi' => "मैं उन आवेगों को नियंत्रित कर सकता/सकती हूँ जो मेरे स्वास्थ्य को नकारात्मक रूप से प्रभावित कर सकते हैं।"],
+  15 => ['en' => "I feel emotionally balanced and resilient to setbacks.", 'hi' => "मैं भावनात्मक रूप से संतुलित और असफलताओं के प्रति लचीला महसूस करता/करती हूँ।"],
+  16 => ['en' => "I regularly engage in activities that promote mental well-being.", 'hi' => "मैं नियमित रूप से उन गतिविधियों में संलग्न रहता/रहती हूँ जो मानसिक कल्याण को बढ़ावा देती हैं।"],
+  17 => ['en' => "I find it easy to fall asleep and wake up feeling refreshed.", 'hi' => "मुझे सोना और तरोताजा महसूस करते हुए जागना आसान लगता है।"],
+  18 => ['en' => "I maintain good posture and ergonomics during my typical day.", 'hi' => "मैं अपने सामान्य दिन के दौरान अच्छा आसन और एर्गोनॉमिक्स बनाए रखता/रखती हूँ।"],
+  19 => ['en' => "I limit my intake of highly processed or fast foods.", 'hi' => "मैं अत्यधिक प्रसंस्कृत (processed) या फास्ट फूड का सेवन सीमित करता/करती हूँ।"],
+  20 => ['en' => "I feel confident in my ability to maintain personal hygiene routines.", 'hi' => "मैं व्यक्तिगत स्वच्छता दिनचर्या बनाए रखने की अपनी क्षमता में आश्वस्त महसूस करता/करती हूँ।"],
+  21 => ['en' => "I avoid using substances in ways that may harm my health.", 'hi' => "मैं ऐसे पदार्थों के उपयोग से बचता/बचती हूँ जो मेरे स्वास्थ्य को नुकसान पहुँचा सकते हैं।"],
+  22 => ['en' => "I follow medical advice and attend recommended health checkups.", 'hi' => "मैं चिकित्सा सलाह का पालन करता/करती हूँ और अनुशंसित स्वास्थ्य जांच में भाग लेता/लेती हूँ।"],
+  23 => ['en' => "I feel that my breathing and respiratory health are good.", 'hi' => "मुझे लगता है कि मेरी सांस और श्वसन स्वास्थ्य अच्छा है।"],
+  24 => ['en' => "I am able to talk clearly and express myself when needed.", 'hi' => "मैं स्पष्ट रूप से बात करने और जरूरत पड़ने पर खुद को व्यक्त करने में सक्षम हूँ।"],
+  25 => ['en' => "I find it easy to adapt my routine when circumstances change.", 'hi' => "परिस्थितियाँ बदलने पर मुझे अपनी दिनचर्या को अनुकूलित करना आसान लगता है।"],
+  26 => ['en' => "Overall, I consider my current health to be satisfactory.", 'hi' => "कुल मिलाकर, मैं अपने वर्तमान स्वास्थ्य को संतोषजनक मानता/मानती हूँ।"]
 ];
 
+// Labels in EN and HI
 $likert_labels = [
-    1 => '1 — Strongly disagree',
-    2 => '2 — Disagree',
-    3 => '3 — Neutral',
-    4 => '4 — Agree',
-    5 => '5 — Strongly agree'
+    1 => ['en' => 'Strongly disagree', 'hi' => 'दृढ़ता से असहमत'],
+    2 => ['en' => 'Disagree', 'hi' => 'असहमत'],
+    3 => ['en' => 'Neutral', 'hi' => 'तटस्थ'],
+    4 => ['en' => 'Agree', 'hi' => 'सहमत'],
+    5 => ['en' => 'Strongly agree', 'hi' => 'दृढ़ता से सहमत']
 ];
 
 function render_likert($name, $labels) {
     $html = '';
-    foreach ($labels as $val => $lab) {
-        $html .= "<label style='margin-right:1.1rem; display:inline-block; margin-bottom:5px;'><input type='radio' name='{$name}' value='{$val}' required> {$lab}</label>";
+    foreach ($labels as $val => $txt) {
+        $html .= "<label style='margin-right:1.1rem; display:inline-block; margin-bottom:5px; cursor:pointer'>";
+        $html .= "<input type='radio' name='{$name}' value='{$val}' required> ";
+        $html .= "<span class='lang-text en'>{$val}. {$txt['en']}</span>";
+        $html .= "<span class='lang-text hi' style='display:none'>{$val}. {$txt['hi']}</span>";
+        $html .= "</label>";
     }
     return $html;
 }
@@ -365,16 +371,60 @@ if ($action === 'start_questionnaire') {
         $patient_ref_id = 'PID-' . date('Ymd') . '-' . mt_rand(1000,9999);
         ?>
         <!doctype html><html><head><meta charset="utf-8"><title>Questionnaire</title><meta name="viewport" content="width=device-width,initial-scale=1"><style>body{font-family:Arial,Helvetica,sans-serif;background:#eef6f6;margin:0;padding:0}header{background:linear-gradient(135deg,#0ea5a4,#4dd0c8);padding:18px;color:white;display:flex;align-items:center;justify-content:space-between}.logo{height:56px}.container{max-width:980px;margin:22px auto;padding:18px}.card{background:white;padding:18px;border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,0.06)}.qblock{margin-bottom:12px;padding:12px;border-radius:6px;background:#fbfbfd}label.q{display:block;font-weight:600;margin-bottom:8px}.submit{background:#0ea5a4;color:white;border:none;padding:10px 16px;border-radius:6px;font-size:1rem;cursor:pointer}</style></head><body>
-        <header><div style="display:flex;align-items:center;gap:12px"><img src="<?php echo htmlspecialchars($logoPath); ?>" alt="logo" class="logo"><div><div style="font-weight:700">Patient Assessment</div><div style="font-size:0.9rem">Ref: <?php echo $patient_ref_id; ?></div></div></div></header>
-        <div class="container"><div class="card"><form method="post">
+        <header>
+            <div style="display:flex;align-items:center;gap:12px">
+                <img src="<?php echo htmlspecialchars($logoPath); ?>" alt="logo" class="logo">
+                <div>
+                    <div style="font-weight:700">
+                        <span class="lang-text en">Patient Assessment</span>
+                        <span class="lang-text hi" style="display:none">रोगी मूल्यांकन</span>
+                    </div>
+                    <div style="font-size:0.9rem">Ref: <?php echo $patient_ref_id; ?></div>
+                </div>
+            </div>
+            <button type="button" onclick="toggleLang()" style="background:transparent;border:1px solid white;color:white;padding:5px 10px;border-radius:4px;cursor:pointer">
+                हिंदी / English
+            </button>
+        </header>
+        <div class="container"><div class="card">
+
+        <form method="post">
         <input type="hidden" name="action" value="submit_answers">
         <input type="hidden" name="name" value="<?php echo htmlspecialchars($name); ?>">
         <input type="hidden" name="email" value="<?php echo htmlspecialchars($email); ?>">
         <input type="hidden" name="age" value="<?php echo htmlspecialchars($age); ?>">
         <input type="hidden" name="gender" value="<?php echo htmlspecialchars($gender); ?>">
         <input type="hidden" name="patient_ref_id" value="<?php echo htmlspecialchars($patient_ref_id); ?>">
-        <?php for ($i=1;$i<=26;$i++): $qid = "q{$i}"; ?><div class="qblock"><label class="q">Q: <?php echo htmlspecialchars($question_texts[$i]); ?></label><div>A: <?php echo render_likert($qid, $likert_labels); ?></div></div><?php endfor; ?>
-        <div style="text-align:right;margin-top:6px"><button type="submit" class="submit">Submit Assessment</button></div></form></div></div></body></html>
+
+        <?php for ($i=1;$i<=26;$i++): $qid = "q{$i}"; ?>
+            <div class="qblock" style="margin-bottom:24px; padding-bottom:15px; border-bottom:1px solid #eee;">
+                <label class="q" style="font-size:1.1rem; margin-bottom:10px; display:block;">
+                    <span class="lang-text en">Q<?php echo $i; ?>. <?php echo htmlspecialchars($question_texts[$i]['en']); ?></span>
+                    <span class="lang-text hi" style="display:none">प्रश्न <?php echo $i; ?>. <?php echo htmlspecialchars($question_texts[$i]['hi']); ?></span>
+                </label>
+                <div><?php echo render_likert($qid, $likert_labels); ?></div>
+            </div>
+        <?php endfor; ?>
+
+        <div style="text-align:right;margin-top:20px">
+            <button type="submit" class="submit">
+                <span class="lang-text en">Submit Assessment</span>
+                <span class="lang-text hi" style="display:none">जमा करें</span>
+            </button>
+        </div>
+        </form>
+        </div></div>
+        <script>
+            function toggleLang() {
+                const en = document.querySelectorAll('.lang-text.en');
+                const hi = document.querySelectorAll('.lang-text.hi');
+                const isEnVisible = en[0].style.display !== 'none';
+
+                en.forEach(el => el.style.display = isEnVisible ? 'none' : 'inline');
+                hi.forEach(el => el.style.display = isEnVisible ? 'inline' : 'none');
+            }
+        </script>
+        </body></html>
         <?php
         exit;
     }
